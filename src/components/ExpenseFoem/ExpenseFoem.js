@@ -49,6 +49,7 @@ const ExpenseFoem = props =>{
         //     date: e.target[2].value
         // })
     }
+ 
 
     return (
         <form onSubmit={submitionHandler}> 
@@ -80,8 +81,9 @@ const ExpenseFoem = props =>{
 
             </div>
 
-                 <div className='new-expense__actions'>
-                    <button name='submit' type='submit'>Add Expense</button>
+                 <div className='new-expense__actions'> 
+                 <button type='button' onClick={props.onCancel}> Cancel</button>
+                    <button name='submit' type='submit'>Add Expense</button> 
                  </div>
         </form>
     )

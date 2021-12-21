@@ -1,6 +1,10 @@
 import './NewExpense.css' ; 
 import ExpenseFoem from '../ExpenseFoem/ExpenseFoem';
+import { useState } from 'react/cjs/react.development';
+
 const NewExpense = props =>{
+
+   const [isEditing , setIsEditing] = useState(false) ; 
     const saveExpenseData = (enteredData)=>{
         const expenseData =  {
                 ...enteredData , 
@@ -8,9 +12,15 @@ const NewExpense = props =>{
                }
                props.onAddNewExpense(expenseData)
     }
+    const startEditingHandler = ()=> setIsEditing(true)
+    const stopEditingHandler = ()=> setIsEditing(false)
     return (
             <div className='new-expense'> 
-                <ExpenseFoem onSaveExpenseData={saveExpenseData} /> 
+            {!isEditing && <button onClick={startEditingHandler} > Add New Expense </button> }
+            {isEditing && <ExpenseFoem 
+                onSaveExpenseData={saveExpenseData}
+                onCancel={stopEditingHandler}
+                 /> }
             </div>
         )
 }

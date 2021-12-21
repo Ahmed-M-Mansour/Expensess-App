@@ -1,36 +1,28 @@
 import { useState } from 'react/cjs/react.development';
 import './Expenses.css' ; 
-import ExpenseItem from '../ExpenseItem/ExpenseItem';
 import ExpensesFilter from '../ExpensesFilter/ExpensesFilter';
+import ExpensesList from '../ExpensesList/ExpensesList';
 import Card from '../Card/Card';
+import ExpensesChart from '../ChartComponent/ExpensesChart ';
 
 const Expenses = props =>{
 
-    const expenses = props.expenses
+
     const [filteredYear , setFilteredYear] = useState('')
-    const filterExpenses = (filteredExpenses) =>{
-        setFilteredYear(filteredExpenses)
-        console.log(filteredExpenses)
-    }
+    // to get the filter of the year from the ExpensesFilter Component 
+    const filterExpenses = (filteredExpenses) => setFilteredYear(filteredExpenses)
+          // to filter the displayed data 
+     const displayFiltiredExpeses =  props.expenses.filter(
+            expense=>expense.date.getFullYear().toString() === filteredYear)
+  
     return(
         <Card className='expenses'> 
         <ExpensesFilter
-         OnFilterExpenses={filterExpenses}
-         selected={filteredYear}
-         /> 
-        <h2>Let's get started!</h2>
-        {
-            expenses.map(item =>{
-                return(
-                    <ExpenseItem
-                        key={item.id}
-                        title={item.title}
-                        amount={item.amount}
-                        date={item.date}
-                        />
-                )
-            })
-        }
+        OnFilterExpenses={filterExpenses}
+        selected={filteredYear}
+        /> 
+        <ExpensesChart expenses={displayFiltiredExpeses} />
+        <ExpensesList items={displayFiltiredExpeses}/> 
         </Card>
     )
 }

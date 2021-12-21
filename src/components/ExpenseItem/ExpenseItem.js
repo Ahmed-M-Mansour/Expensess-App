@@ -11,6 +11,7 @@ const ExpenseItem = (props) =>{
       console.log('Updated')
     }
     return (
+      <li> 
       <Card className='expense-item'>
        <ExoenseDate date={props.date} />
         <div className='expense-item__description'>
@@ -19,6 +20,7 @@ const ExpenseItem = (props) =>{
         </div>
         <button onClick={update}> Update </button>
       </Card>
+      </li>
     );
 }
 
