@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.063bd973.chunk.css",
-    "main.js": "/static/js/main.533cc3d6.chunk.js",
-    "main.js.map": "/static/js/main.533cc3d6.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.d935bac7.js",
-    "runtime-main.js.map": "/static/js/runtime-main.d935bac7.js.map",
-    "static/js/2.482ef6d5.chunk.js": "/static/js/2.482ef6d5.chunk.js",
-    "static/js/2.482ef6d5.chunk.js.map": "/static/js/2.482ef6d5.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.063bd973.chunk.css.map": "/static/css/main.063bd973.chunk.css.map",
-    "static/js/2.482ef6d5.chunk.js.LICENSE.txt": "/static/js/2.482ef6d5.chunk.js.LICENSE.txt"
+    "main.css": "/Expensess-App/static/css/main.063bd973.chunk.css",
+    "main.js": "/Expensess-App/static/js/main.58c5a220.chunk.js",
+    "main.js.map": "/Expensess-App/static/js/main.58c5a220.chunk.js.map",
+    "runtime-main.js": "/Expensess-App/static/js/runtime-main.28faff62.js",
+    "runtime-main.js.map": "/Expensess-App/static/js/runtime-main.28faff62.js.map",
+    "static/js/2.d7b4068e.chunk.js": "/Expensess-App/static/js/2.d7b4068e.chunk.js",
+    "static/js/2.d7b4068e.chunk.js.map": "/Expensess-App/static/js/2.d7b4068e.chunk.js.map",
+    "index.html": "/Expensess-App/index.html",
+    "static/css/main.063bd973.chunk.css.map": "/Expensess-App/static/css/main.063bd973.chunk.css.map",
+    "static/js/2.d7b4068e.chunk.js.LICENSE.txt": "/Expensess-App/static/js/2.d7b4068e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.d935bac7.js",
-    "static/js/2.482ef6d5.chunk.js",
+    "static/js/runtime-main.28faff62.js",
+    "static/js/2.d7b4068e.chunk.js",
     "static/css/main.063bd973.chunk.css",
-    "static/js/main.533cc3d6.chunk.js"
+    "static/js/main.58c5a220.chunk.js"
   ]
 }
